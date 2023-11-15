@@ -1,0 +1,76 @@
+body {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  background-color: #9c1e21;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #e8e1c7;
+  margin-bottom: 200px; /* Add space below the top bar */
+}
+
+.logo,
+.popular,
+.about,
+.resources,
+.logout {
+  padding: 10px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+
+  padding: 20px;
+  color: #e8e1c7;
+  justify-content: center;
+
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  justify-content: center;
+
+}
+
+.box {
+  align-items: center; /* Center the text vertically */
+  border-radius: 10px; /* Add rounded corners to the boxes */
+  background-color: #9c1e21;
+  width: 220px;
+  height: 30px;
+  color: #e8e1c7;
+  text-align: center;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the text horizontally */
+  padding: 10px;
+  margin: 0;
+  margin-right: 10px; /* Adjust the margin between the boxes */
+  margin-left: 10px; /* Adjust the margin between the boxes */
+
+}
+
+
+.recommended-box {
+  align-items: center; /* Center the text vertically */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the text horizontally */
+  height: 150px;
+  border-radius: 10px; /* Add rounded corners to the boxes */
+  background-color: #9c1e21;
+  padding: 20px;
+  color: #e8e1c7;
+  text-align: center;
+  margin-top: 300px; /* Add space above the recommended recipes box */
+}
