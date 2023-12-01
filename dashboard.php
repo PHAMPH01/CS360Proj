@@ -1,25 +1,26 @@
+<?php
+session_start();
+include_once('navBar.php');
+include_once('phongUtil.php')
+?>
 <!DOCTYPE html>
-<html>
+<html>      
 <head>
+    <title>User Dashboard</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="top-bar">
-        <div class="logo" onmouseout="">Logo</div>
-        <div class="popular" onmouseout="">Today's Popular</div>
-        <div class="about" onmouseout="">About Us</div>
-        <div class="resources" onmouseout="">Resources</div>
-        <div class="logout" onmouseout="">Logout</div>
-    </div>
-    <div class="greet">Hello, user</div>
+    <?php
+    echo "<div class='greet'>Hello, " . $_SESSION['userName'] ."</div>";
+    ?>
     <div class="content">
         <div class="row">
-            <div class="box" onmouseout="">Past recipes</div>
-            <div class="box" onmouseout="">Preferences</div>
+            <div class="box"><a href="https://google.com">Past recipes</a></div>
+            <div class="box"><a href="https://google.com">Preferences</a></div>
         </div>
         <div class="row">
-            <div class="box" onmouseout="">Setting</div>
-            <div class="box" onmouseout="">Pantry</div>
+            <div class="box"><a href="https://google.com">Setting</a></div>
+            <div class="box"><a href="home.php?op=pantry">Pantry</a></div>
         </div>
         <div class="recommended-box">
             Recommended Recipes
