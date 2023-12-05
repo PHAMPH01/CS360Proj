@@ -30,7 +30,7 @@ if (isset($_GET['op'])) {
           <h1>We Are Cooking!</h1>
           <p>We are going to make something yummy! Give us information so that this meal will be very extra NICE!</p>
           <div class="cta">
-          <a href="?op=searchForm">LET'S COOK</a>
+          <button onclick= 'window.location.href = "?op=searchForm"'>LET'S COOK</button>
           </div>
         </section>
         <?php
@@ -85,3 +85,4 @@ if (isset($_GET['op'])) {
 </footer>
 
 </html>
+
