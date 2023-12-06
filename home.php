@@ -72,6 +72,8 @@ if (isset($_GET['op'])) {
       } else if ($op == 'search'){
       	//runs sql search and creates a table with results
       	ben_search($db, $_POST);
+      } else if ($op == 'popular'){
+        ben_genPopularTable($db);
       }
 
       ?>
@@ -83,3 +85,4 @@ if (isset($_GET['op'])) {
 </footer>
 
 </html>
+

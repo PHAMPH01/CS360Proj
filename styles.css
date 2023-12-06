@@ -180,3 +180,28 @@ footer {
 .idk{
   color:black
 }
+
+/*Table for Search*/
+#searchTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#searchTable td, #searchTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#searchTable tr:nth-child(even){background-color: #fafad2;}
+#searchTable tr:nth-child(odd){background-color: #fcfca4;}
+
+
+#searchTable tr:hover {background-color: #d9d983;}
+
+#searchTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #9c1e21;
+  color: white;
+}
